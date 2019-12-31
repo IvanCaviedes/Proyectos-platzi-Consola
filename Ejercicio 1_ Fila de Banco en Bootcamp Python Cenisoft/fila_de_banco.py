@@ -47,7 +47,7 @@ while True:
             break         
     elif inst[0] == 'd' or inst[0] == 'D' :
         for k in Fila1:
-            print(f'usuario {k} esta guardado en fila de depocito')
+            print(f'usuario {k} esta esperando en fila de depocito')
         for j in Fila2:
-            print(f'usuario {j} esta guardado en fila de apertura de cuenta')
+            print(f'usuario {j} esta esperando en fila de apertura de cuenta')
 
