@@ -1,6 +1,4 @@
 Fila1=[]
-print("digite la cantidad de platos")
-N = int(input())
 while True:
     inst = str(input('''
     ¿Que desea hacer?
