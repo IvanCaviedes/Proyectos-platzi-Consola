@@ -1,12 +1,14 @@
 Fila1=[]
 print("digite la cantidad de platos")
 N = int(input())
-for i in range(N):
-    print("ingrese alguno de estos comandos:")
-    print("a. Agregar plato al lavabo")
-    print("b. Agregar lavar plato")
-    print("c. Listar platos en la pila")
-    inst = input()
+while True:
+    inst = str(input('''
+    ¿Que desea hacer?
+    
+    a. Agregar plato al lavabo
+    b. Agregar lavar plato
+    c. Listar platos en la pila
+    '''))
     if inst[0] == 'a' or inst[0] == 'A':
         valor = input("ingrese algun valor")
         Fila1.append(valor)
@@ -22,5 +24,5 @@ for i in range(N):
             print("Ya no quedan platos")
             break
     elif inst[0] == 'c' or inst[0] == 'C' :
-        print(f'platos en el lavabo{Fila1}' )
-        N+=1
+        for k in Fila1:
+            print(f'el plato {k} queda en el lavabo')
